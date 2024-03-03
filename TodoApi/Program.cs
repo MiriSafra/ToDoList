@@ -47,7 +47,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("AllowAll");
 
-app.MapGet("/", () => "to do list");
 app.MapGet("/items", GetAllTasks);
 app.MapPost("/items", AddTask);
 app.MapPut("/items/{id}", UpdateTask);
