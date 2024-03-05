@@ -7,6 +7,7 @@ axios.defaults.baseURL = "http://localhost:5168";
 // הוספת Interceptor לתפיסת שגיאות ב־response ורישום ללוג
 axios.interceptors.response.use(
   function (response) {
+    console.log("succeded");
     return response;
   },
   error => {
